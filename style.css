@@ -1,0 +1,364 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #111111;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    border-bottom: 1px solid #333333;
+}
+
+header h2 {
+    color: #D4AF37;
+    letter-spacing: 3px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #D4AF37;
+}
+
+
+/* APRESENTAÇÃO */
+
+#inicio {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#inicio p:first-child {
+    color: #D4AF37;
+    letter-spacing: 4px;
+    font-size: 13px;
+}
+
+#inicio h1 {
+    color: #D4AF37;
+    font-size: clamp(42px, 8vw, 80px);
+    letter-spacing: 5px;
+    margin: 20px 0;
+}
+
+#inicio p:nth-of-type(2) {
+    color: #cccccc;
+    font-size: 18px;
+}
+
+#inicio a {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 16px 32px;
+    background-color: #D4AF37;
+    color: #111111;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+#inicio a:hover {
+    background-color: #ffffff;
+}
+
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* SEÇÃO DE SERVIÇOS */
+
+#servicos {
+    padding: 80px 8%;
+    text-align: center;
+    background-color: #191919;
+}
+
+#servicos .subtitulo {
+    color: #D4AF37;
+    letter-spacing: 4px;
+    font-size: 13px;
+}
+
+#servicos h2 {
+    font-size: 36px;
+    letter-spacing: 3px;
+    margin-bottom: 45px;
+}
+
+.lista-servicos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.servico-card {
+    background-color: #222222;
+    border: 1px solid #383838;
+    padding: 30px 20px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.servico-card:hover {
+    transform: translateY(-5px);
+    border-color: #D4AF37;
+}
+
+.servico-card h3 {
+    font-size: 17px;
+    color: #ffffff;
+}
+
+.servico-card p {
+    color: #D4AF37;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* RESPONSIVIDADE DOS SERVIÇOS */
+
+@media (max-width: 800px) {
+    .lista-servicos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .lista-servicos {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* EQUIPE */
+
+#equipe {
+    padding: 90px 8%;
+    text-align: center;
+    background-color: #111111;
+}
+
+.subtitulo {
+    color: #D4AF37;
+    letter-spacing: 4px;
+    font-size: 13px;
+}
+
+#equipe h2,
+#contato h2 {
+    font-size: 36px;
+    letter-spacing: 3px;
+    margin-bottom: 45px;
+}
+
+.lista-equipe {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.profissional-card {
+    background-color: #1d1d1d;
+    padding: 35px 20px;
+    border: 1px solid #333333;
+    transition: 0.3s;
+}
+
+.profissional-card:hover {
+    border-color: #D4AF37;
+    transform: translateY(-5px);
+}
+
+.foto-placeholder {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 20px;
+    border: 2px solid #D4AF37;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #D4AF37;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.profissional-card h3 {
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.profissional-card p {
+    color: #D4AF37;
+}
+
+
+/* CONTATO */
+
+#contato {
+    padding: 90px 20px;
+    text-align: center;
+    background-color: #191919;
+}
+
+#contato > p:not(.subtitulo) {
+    color: #cccccc;
+    line-height: 1.5;
+}
+
+.botoes-contato {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.botoes-contato a {
+    padding: 16px 25px;
+    background-color: #D4AF37;
+    color: #111111;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.botoes-contato a:hover {
+    background-color: #ffffff;
+}
+
+
+/* AJUSTES PARA CELULAR */
+
+@media (max-width: 700px) {
+    .lista-equipe {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+
+    #equipe h2,
+    #contato h2 {
+        font-size: 27px;
+    }
+
+    .botoes-contato {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botoes-contato a {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+/* NOVA APRESENTAÇÃO */
+
+#inicio {
+    min-height: 85vh;
+    padding: 60px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.inicio-conteudo {
+    flex: 1;
+}
+
+.inicio-conteudo > p:first-child {
+    color: #D4AF37;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.inicio-conteudo h1 {
+    color: #D4AF37;
+    font-size: clamp(40px, 5vw, 65px);
+    letter-spacing: 4px;
+}
+
+.inicio-conteudo > p:nth-of-type(2) {
+    color: #ccc;
+    font-size: 20px;
+}
+
+.inicio-conteudo a {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 16px 30px;
+    background: #D4AF37;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.inicio-imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.inicio-imagem img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+    #inicio {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 6%;
+    }
+
+    .inicio-imagem img {
+        max-width: 350px;
+    }
+}
