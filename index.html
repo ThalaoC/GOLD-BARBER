@@ -1,183 +1,326 @@
 
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gold Barber Shop em Pindamonhangaba. Profissionalismo e respeito em cada corte. Agende seu horário!">
+  <title>Gold Barber | Profissionalismo e Respeito</title>
 
-    <title>Gold Barber | Profissionalismo e Respeito</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- CABEÇALHO -->
-    <header>
-        <h2>GOLD BARBER</h2>
+  <header>
+    <div class="container nav">
+      <a href="#inicio" class="logo">
+        GOLD BARBER
+        <span>PROFISSIONALISMO E RESPEITO</span>
+      </a>
 
-        <nav>
-            <a href="#inicio">Início</a>
-            <a href="#servicos">Serviços</a>
-            <a href="#equipe">Profissionais</a>
-            <a href="#contato">Contato</a>
-        </nav>
-    </header>
+      <button class="mobile-menu" onclick="toggleMenu()" aria-label="Abrir menu">☰</button>
+
+      <nav class="links" id="menu">
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#contato" class="btn">AGENDAR HORÁRIO</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
 
     <!-- APRESENTAÇÃO -->
-    <main>
-        <section id="inicio">
-    <div class="inicio-conteudo">
-        <p>⚜️ PROFISSIONALISMO E RESPEITO ⚜️</p>
-        <h1>GOLD BARBER</h1>
-        <p>Seu estilo, nossa dedicação.</p>
+    <section class="hero" id="inicio">
+      <div class="container">
+        <div class="hero-content">
+          <div class="eyebrow">⚜ PROFISSIONALISMO E RESPEITO ⚜</div>
 
-        <a href="https://goldbarber.up.railway.app" target="_blank">
-            AGENDAR HORÁRIO
-        </a>
+          <h1>Seu estilo.<br><span>Nossa dedicação.</span></h1>
+
+          <p>
+            Mais que um corte, cuidado em cada detalhe.
+            Um ambiente preparado para você renovar
+            seu visual com qualidade e personalidade.
+          </p>
+
+          <a href="https://goldbarber.up.railway.app"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="btn">
+            AGENDAR MEU HORÁRIO →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="services" id="servicos">
+      <div class="container">
+
+        <div class="section-heading">
+          <div class="eyebrow">O QUE OFERECEMOS</div>
+          <h2>Nossos serviços</h2>
+          <p>Qualidade, cuidado e atenção em cada detalhe.</p>
+        </div>
+
+        <div class="service-grid">
+
+          <div class="service-card">
+            <div class="service-icon">✂</div>
+            <h3>Corte</h3>
+            <p>Cortes clássicos e modernos, com acabamento cuidadoso.</p>
+            <div class="price">R$ 35,00</div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">♧</div>
+            <h3>Barba</h3>
+            <p>Modelagem e alinhamento para valorizar seu visual.</p>
+            <div class="price">R$ 35,00</div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">✦</div>
+            <h3>Corte + Barba</h3>
+            <p>O combo completo para renovar seu estilo.</p>
+            <div class="price">R$ 70,00</div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">✧</div>
+            <h3>Corte + Barba + Sobrancelha</h3>
+            <p>Um cuidado completo para o seu visual.</p>
+            <div class="price">R$ 80,00</div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">◈</div>
+            <h3>Corte na tesoura</h3>
+            <p>Técnica e precisão para um acabamento diferenciado.</p>
+            <div class="price">R$ 40,00</div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">✂</div>
+            <h3>Corte navalhado / Shaver</h3>
+            <p>Acabamento rente e definição do corte.</p>
+            <div class="price">R$ 40,00</div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">♧</div>
+            <h3>Corte navalhado + Barba</h3>
+            <p>Combinação de corte e barba com acabamento preciso.</p>
+            <div class="price">R$ 75,00</div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">✦</div>
+            <h3>Corte navalhado + Sobrancelha</h3>
+            <p>Detalhes que fazem a diferença no resultado.</p>
+            <div class="price">R$ 50,00</div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">✧</div>
+            <h3>Corte + Sobrancelha</h3>
+            <p>Corte alinhado com cuidado nos detalhes.</p>
+            <div class="price">R$ 45,00</div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">♢</div>
+            <h3>Sobrancelha</h3>
+            <p>Limpeza e alinhamento para valorizar o rosto.</p>
+            <div class="price">R$ 10,00</div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">◉</div>
+            <h3>Barboterapia</h3>
+            <p>Cuidados especiais com vapor de ozônio.</p>
+            <div class="price">R$ 45,00</div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">♧</div>
+            <h3>Barba + Pezinho</h3>
+            <p>Barba alinhada e acabamento na medida.</p>
+            <div class="price">R$ 55,00</div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">✦</div>
+            <h3>Corte + Depilação de nariz</h3>
+            <p>Mais cuidado e atenção aos pequenos detalhes.</p>
+            <div class="price">R$ 55,00</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE A BARBEARIA -->
+    <section id="sobre">
+      <div class="container about-grid">
+
+        <img
+          class="about-image"
+          src="assets/gold-barber-hero-real.webp"
+          alt="Ambiente da Gold Barber"
+        >
+
+        <div class="about-text">
+          <div class="eyebrow">NOSSA ESSÊNCIA</div>
+
+          <h2>Mais que uma barbearia. Um espaço de estilo.</h2>
+
+          <p>
+            A Gold Barber nasceu da iniciativa de Bruno,
+            que construiu a barbearia do zero com dedicação
+            e o propósito de oferecer um atendimento de qualidade.
+          </p>
+
+          <p>
+            Hoje, ao lado de Pedro e Victor, a equipe mantém
+            o compromisso com profissionalismo, respeito
+            e atenção em cada atendimento.
+          </p>
+
+          <p>
+            Aqui, você encontra um ambiente pensado para
+            cuidar do visual e aproveitar o momento.
+          </p>
+
+          <a href="https://www.instagram.com/gold_barber_shop_01/"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="btn">
+            CONHEÇA NOSSO INSTAGRAM
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EQUIPE -->
+    <section class="team" id="equipe">
+      <div class="container">
+
+        <div class="section-heading">
+          <div class="eyebrow">QUEM CUIDA DO SEU ESTILO</div>
+          <h2>Nossa equipe</h2>
+          <p>Três profissionais, o mesmo compromisso com qualidade.</p>
+        </div>
+
+        <div class="team-grid">
+
+          <div class="team-card">
+            <div class="team-initial">B</div>
+            <h3>Bruno</h3>
+            <p>Fundador e barbeiro</p>
+          </div>
+
+          <div class="team-card">
+            <div class="team-initial">P</div>
+            <h3>Pedro</h3>
+            <p>Barbeiro</p>
+          </div>
+
+          <div class="team-card">
+            <div class="team-initial">V</div>
+            <h3>Victor</h3>
+            <p>Barbeiro</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- AGENDAMENTO E CONTATO -->
+    <section class="booking" id="contato">
+      <div class="container">
+
+        <div class="eyebrow">SEU PRÓXIMO VISUAL COMEÇA AQUI</div>
+
+        <h2>Seu estilo merece<br>esse cuidado.</h2>
+
+        <p>Escolha seu horário e venha conhecer a Gold Barber.</p>
+
+        <div class="contact-buttons">
+
+          <a href="https://goldbarber.up.railway.app"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="btn">
+            AGENDAR HORÁRIO →
+          </a>
+
+          <a href="https://wa.me/5512988565206"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="btn btn-outline">
+            FALAR PELO WHATSAPP
+          </a>
+
+        </div>
+
+        <div class="contact-info">
+          <p><strong>Endereço</strong></p>
+          <p>R. Dr. Vicente Bottiglieri, 2109</p>
+          <p>Lot. Alfredo Abilio Flores</p>
+          <p>Pindamonhangaba – SP</p>
+
+          <a href="https://www.google.com/maps/place/Gold+Barber+Shop/@-22.9465126,-45.4760398,15z/"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="map-link">
+            VER LOCALIZAÇÃO NO GOOGLE MAPS →
+          </a>
+        </div>
+
+        <div class="hours">
+          <h3>Horários de funcionamento</h3>
+          <p>Segunda a sexta: 09h–13h e 15h30–20h</p>
+          <p>Sábado: 09h–13h e 14h–17h</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+
+      <div class="logo">
+        GOLD BARBER
+        <span>PROFISSIONALISMO E RESPEITO</span>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://www.instagram.com/gold_barber_shop_01/"
+           target="_blank"
+           rel="noopener noreferrer">Instagram</a>
+        <a href="https://wa.me/5512988565206"
+           target="_blank"
+           rel="noopener noreferrer">WhatsApp</a>
+      </div>
+
+      <p>© 2026 Gold Barber. Todos os direitos reservados.</p>
+
     </div>
+  </footer>
 
-    <div class="inicio-imagem">
-        <img src="assets/gold-barber-hero-real.webp" alt="Gold Barber - Profissionalismo e Respeito">
-    </div>
-</section>
-
-        
-        <!-- SERVIÇOS -->
-        <section id="servicos">
-
-            <p class="subtitulo">O QUE OFERECEMOS</p>
-
-            <h2>NOSSOS SERVIÇOS</h2>
-
-            <div class="lista-servicos">
-
-                <article class="servico-card">
-                    <h3>Corte</h3>
-                    <p>R$ 35,00</p>
-                </article>
-
-                <article class="servico-card">
-                    <h3>Barba</h3>
-                    <p>R$ 35,00</p>
-                </article>
-
-                <article class="servico-card">
-                    <h3>Corte + Barba</h3>
-                    <p>R$ 70,00</p>
-                </article>
-
-                <article class="servico-card">
-                    <h3>Corte + Barba + Sobrancelha</h3>
-                    <p>R$ 80,00</p>
-                </article>
-
-                <article class="servico-card">
-                    <h3>Corte na Tesoura</h3>
-                    <p>R$ 40,00</p>
-                </article>
-
-                <article class="servico-card">
-                    <h3>Corte Navalhado / Shaver</h3>
-                    <p>R$ 40,00</p>
-                </article>
-
-                <article class="servico-card">
-                    <h3>Corte Navalhado + Barba</h3>
-                    <p>R$ 75,00</p>
-                </article>
-
-                <article class="servico-card">
-                    <h3>Corte Navalhado + Sobrancelha</h3>
-                    <p>R$ 50,00</p>
-                </article>
-
-                <article class="servico-card">
-                    <h3>Corte + Sobrancelha</h3>
-                    <p>R$ 45,00</p>
-                </article>
-
-                <article class="servico-card">
-                    <h3>Corte + Depilação de Nariz</h3>
-                    <p>R$ 55,00</p>
-                </article>
-
-                <article class="servico-card">
-                    <h3>Barba + Pezinho</h3>
-                    <p>R$ 55,00</p>
-                </article>
-
-                <article class="servico-card">
-                    <h3>Barboterapia com Vapor de Ozônio</h3>
-                    <p>R$ 45,00</p>
-                </article>
-
-                <article class="servico-card">
-                    <h3>Sobrancelha</h3>
-                    <p>R$ 10,00</p>
-                </article>
-
-            </div>
-
-        </section>
-
-        
-        <!-- EQUIPE -->
-        <section id="equipe">
-
-            <p class="subtitulo">QUEM FAZ ACONTECER</p>
-            <h2>NOSSA EQUIPE</h2>
-
-            <div class="lista-equipe">
-
-                <article class="profissional-card">
-                    <div class="foto-placeholder">B</div>
-                    <h3>Bruno</h3>
-                    <p>Barbeiro</p>
-                </article>
-
-                <article class="profissional-card">
-                    <div class="foto-placeholder">P</div>
-                    <h3>Pedro</h3>
-                    <p>Barbeiro</p>
-                </article>
-
-                <article class="profissional-card">
-                    <div class="foto-placeholder">V</div>
-                    <h3>Victor</h3>
-                    <p>Barbeiro</p>
-                </article>
-
-            </div>
-        </section>
-
-        <!-- CONTATO -->
-        <section id="contato">
-
-            <p class="subtitulo">ESTAMOS ESPERANDO POR VOCÊ</p>
-            <h2>VISITE A GOLD BARBER</h2>
-
-            <p>Rua Dr. Vicente Bottiglieri, 2109</p>
-            <p>Pindamonhangaba - SP</p>
-
-            <div class="botoes-contato">
-                <a href="https://goldbarber.up.railway.app" target="_blank">
-                    AGENDAR HORÁRIO
-                </a>
-
-                <a href="https://wa.me/5512988565206" target="_blank">
-                    WHATSAPP
-                </a>
-
-                <a href="https://www.google.com/maps/place/Gold+Barber+Shop/@-22.9440909,-45.4615777">
-                    COMO CHEGAR
-                </a>
-            </div>
-
-        </section>
-
-    </main>
+  <script src="script.js"></script>
 
 </body>
 </html>
